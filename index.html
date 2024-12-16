@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Partner Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tennis Partner Finder</h1>
+        <p>Find your perfect tennis playing partner!</p>
+    </header>
+    <main>
+        <section id="search-section">
+            <h2>Search for Partners</h2>
+            <form id="search-form">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter your city or ZIP code" required>
+
+                <label for="skill">Skill Level:</label>
+                <select id="skill" name="skill" required>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <label for="availability">Availability:</label>
+                <input type="date" id="availability" name="availability" required>
+
+                <button type="submit">Find Partners</button>
+            </form>
+        </section>
+
+        <section id="results-section">
+            <h2>Available Partners</h2>
+            <div id="results">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tennis Partner Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
